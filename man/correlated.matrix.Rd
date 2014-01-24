@@ -4,8 +4,8 @@
 correlated.matrix
 }
 \description{
-Create an \code{ntimes} x \code{nspecies} matrix with correlation \eqn{\rho},
-standard deviation \eqn{\sigma}, and mean \eqn{\mu}
+Create an \code{ntimes} x \code{nspecies} matrix with correlation rho,
+standard deviation sigma, and mean mu
 }
 \usage{
 correlated.matrix (rho = 0, sigma = 1, mu = 0, ntimes = 200, nspecies = 10)
@@ -56,10 +56,10 @@ Tarik C. Gouhier (tarik.gouhier@gmail.com)
 
 \examples{
 mat=correlated.matrix(rho=0.85, sigma=30, mu=10, nspecies=10)
-## Check sd of each column
+# Check sd of each column
 apply(mat$community, 2, sd)
-## Check mean of each column
+# Check mean of each column
 apply(mat$community, 2, mean)
-## Check correlation of matrix
+# Check correlation of matrix
 community.sync(mat$community)
 }
