@@ -130,23 +130,24 @@ vario.aux <- function (n.bins=20, size.bins=NULL, extent=0.5, data, data2=NULL, 
       if (type=="cov")
         vals=cov(t(data[, 3:n.cols]))
       else {
-        vals=cor(t(data[, 3:n.cols]), method=type, use = "pairwise.complete.obs")
+        vals=suppressWarnings(cor(t(data[, 3:n.cols]), method=type, use = "pairwise.complete.obs"))
       }
       vals=vals[lower.tri(vals)]
     }
     else {
       if (type=="cov")
-        vals=cov(x=t(data[, 3:n.cols]), y=t(data2[, 3:n.cols]), use = "pairwise.complete.obs")      
+        vals=suppressWarnings(cov(x=t(data[, 3:n.cols]), y=t(data2[, 3:n.cols]), use = "pairwise.complete.obs"))
       else
-        vals=cor(x=t(data[, 3:n.cols]), y=t(data2[, 3:n.cols]), method=type, use = "pairwise.complete.obs")
-      vals=vals[row(vals)!=col(vals)]
+        vals=suppressWarnings(cor(x=t(data[, 3:n.cols]), y=t(data2[, 3:n.cols]), method=type, use = "pairwise.complete.obs"))
+      # vals=vals[row(vals)!=col(vals)]
+      vals=vals[lower.tri(vals)]
     }
     
     regional.mean=mean(vals, na.rm=TRUE)
     if (is.centered) {
       vals=vals-regional.mean
     }
-    vario=tapply(vals, grpdata, mean, na.rm=T)
+    vario=tapply(vals, grpdata, mean, na.rm=TRUE)
     npoints=tapply(vals, grpdata, FUN=function (x) {length(na.omit(x))})
     bin.dist=tapply(all.dists, grpdata, FUN=mean, na.rm=TRUE)
   }

@@ -1,5 +1,5 @@
 aa4b777963b869af2dfca7ea2861283b *ChangeLog
-6981b3c7526572ad4e24e4e065dd9c3b *DESCRIPTION
+0443acb9e71f96a65134974275414cde *DESCRIPTION
 7588222f6c67015b2f263cd46c64892b *NAMESPACE
 ef506c7410f0ed11175bab88d2857581 *R/community.sync.R
 bf96182bd12a7acb8622236229a9a434 *R/coord2dist.R
@@ -23,14 +23,14 @@ b8c9e9949646977362ed4a1a47840eac *R/print.synchrony.R
 caaec717f2530aa67e5198fd1589d2b9 *R/print.variofit.R
 856867d2fd1ee0455ec529fa45156649 *R/surrogate.ts.R
 50c13fea18affdaf8b30af138f91aa23 *R/synchrony-internal.R
-6423d5053f94c9c3d588c21d18ed6f4c *R/vario.R
-aa88237029b38d27c85830464c7a2d48 *R/vario.fit.R
+904f9146db391b53f1b8e59d31eb3217 *R/vario.R
+3b8e33328144895c2df747eb4e01c5ce *R/vario.fit.R
 72272b803eb37c1880a71450956be101 *R/vario.func.R
 42561205c14f536410a1b9e96937f35f *R/zzz.R
-532178122208c8b8ee3aeeba0cf457d2 *data/bird.traits.rda
-243f38f150670ff64da80137739d4c8f *data/pisco.data.rda
-17bf8cfea9fbb86f18aee41a3df9bb2d *inst/CITATION
-7d101bdcada6b3a9163154dc4318d0f4 *inst/NEWS.Rd
+4989521ba812e75707ff60fe0556bfe4 *data/bird.traits.rda
+211bc2d9055f58bd646141712955a3fb *data/pisco.data.rda
+8823b3871ab6a5bc51a2d30bb5bff21d *inst/CITATION
+7db6cefec07bf46a084684f26fe7b566 *inst/NEWS.Rd
 517f7350d9127c36b843e1ded4c080f3 *man/bird.traits.Rd
 75716ad52f0b574cb9a77ba5a836e57d *man/community.sync.Rd
 c89206f59c80fe5e560caec0c977bcb0 *man/coord2dist.Rd
